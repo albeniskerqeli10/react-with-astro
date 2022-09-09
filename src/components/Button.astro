@@ -1,0 +1,17 @@
+---
+         export interface Button {
+  title:string;
+  color:string;
+}
+
+ const {title, color} = Astro.props;
+---
+<button style={`--button-color: ${color};`}>
+    {title}
+    </button>
+
+    <style>
+      button {
+        background-color:var(--button-color);
+      }
+    </style>

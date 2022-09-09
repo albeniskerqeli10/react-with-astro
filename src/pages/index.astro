@@ -13,8 +13,8 @@ console.log({data}, 'asdasdasdasdas');
 <Layout title="Welcome to Astro.">
 	<main class="main">
 		<div class="main-container">
-		<Header/>
-		<Blogs client:load blogs={data}/>
+		<Header />
+		<Blogs client:visible blogs={data}/>
 		</div>
 	</main>
 </Layout>
